@@ -21,8 +21,8 @@ spec:
       containers:
       - name: backend-api-2-pods
 
-        image: drayfocus/microservice-example-1-backend-api2:v8
-        imagePullPolicy: Never
+        image: drayfocus/microservice-example-1-backend-api2:latest
+        imagePullPolicy: Always
 
         ports:
         - containerPort: 3020

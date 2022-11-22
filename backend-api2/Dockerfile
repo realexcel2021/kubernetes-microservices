@@ -10,6 +10,7 @@ COPY ${basedir}/package*.json ./
 # Install npm packages
 RUN npm install --silent
 
+
 # Copy project files to the workdir.
 COPY ${basedir}/ .
 
