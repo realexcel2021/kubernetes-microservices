@@ -18,13 +18,13 @@ routes
     },
   }
 
-  var service2endpoint = process.env.SERVICE_API2_ENDPOINT;
+  var service2endpoint = "backend-api-2-svc.default.svc.cluster.local:80/api";
   var url = parse(service2endpoint, true);
 
   var options = {
-    host: url.hostname,
-    port: url.port,
-    path: url.pathname + '/message'
+    host: "backend-api-2-svc.default.svc.cluster.local",
+    port: 80,
+    path: '/api/message'
   }
 
   console.log("Service 1 was called. Calling Service 2 => " + JSON.stringify(options));

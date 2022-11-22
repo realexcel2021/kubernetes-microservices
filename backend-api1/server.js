@@ -8,7 +8,11 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 
 // Allow all CORS.
-app.use(cors());
+app.use(cors(
+  {
+    origin: '*'
+  }
+));
 
 // Parse any JSON.
 app.use(bodyParser.json());

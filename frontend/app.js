@@ -6,7 +6,7 @@ function runExample() {
     var status = xhr.status;
     if (status === 200) {
       var xhr2 = new XMLHttpRequest();
-      xhr2.open('GET', xhr.response.service1endpoint + '/message', true);
+      xhr2.open('GET', "localhost:3001" + '/api/message', true);
       xhr2.responseType = 'json';
       xhr2.onload = function() {
         var status2 = xhr2.status;

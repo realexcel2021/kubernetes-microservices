@@ -37,26 +37,14 @@ The main levels of the repository directory tree are laid out as follows
 ```
 
 
-# Environment
-Document describes environment used in this showcase.
-> [Environment](https://github.com/spylkkanen/kubernetes-microservices/tree/master/docs/Environment/README.md)
-
-
-# Docker application quick launch
-Document uses powershell script to show docker image build and push to local container repository. Finally presentation starts containers in local docker service and has some quick browser based test cases.
-> [Docker application quick launch](https://github.com/spylkkanen/kubernetes-microservices/tree/master/docs/DockerApplicationQuickLaunch/README.md)
-
-
 # Kubernetes application quick launch
-Document uses powershell script to show docker image build and push to local container repository and how to deploy container registry images to local kubernetes cluster. Finally presentation starts containers in local kubernetes cluster and has some quick browser based test cases.
-> [Kubernetes application quick launch](https://github.com/spylkkanen/kubernetes-microservices/tree/master/docs/KubernetesApplicationQuickLaunch/README.md)
 
+To build docker images run 
+```
+./build.sh
+```
 
-# Azure and VSTS CI/CD integration
-Maybe local cloud is not what you are looking for and morelikely you want to same in Cloud. This documentation shows how to integrate Azure and VSTS Continuous Integration and Continuous Development.
-> [Visual Studio Team Service CI/CD configuration](https://github.com/spylkkanen/kubernetes-microservices/tree/master/docs/Azure-and-VSTS/README.md)
-
-
-# Other usefull commands and etc.
-This section basically contains some notes.
-> [Notes](https://github.com/spylkkanen/kubernetes-microservices/tree/master/docs/Other/README.md)
+To deploy microservice on kubernetes run
+```
+./kubernetes/install.sh
+```

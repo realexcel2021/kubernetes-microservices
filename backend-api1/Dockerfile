@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:15-alpine
 
 LABEL version="1.0.0" 
 ARG basedir="backend-api1"

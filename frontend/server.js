@@ -12,7 +12,7 @@ app.use('/', express.static(staticContentDir));
 // Handle config request.
 app.get('/api/config', function (req, res) {
     var data = {
-        service1endpoint: process.env.SERVICE_API1_ENDPOINT || 9010
+        service1endpoint: "backend-api-1-svc.default.svc.cluster.local:80/api" || 9010
     };
 
     res.send(data);

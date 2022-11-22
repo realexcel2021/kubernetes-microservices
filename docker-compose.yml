@@ -2,7 +2,7 @@ version: '3'
 
 services:
   frontend:
-    image: ${DOCKER_REG}microservice-example-1/frontend${DOCKER_TAG}
+    image: microservice-example-1/frontend
     build: 
       context: .
       dockerfile: frontend/Dockerfile
@@ -17,7 +17,7 @@ services:
       - microservice-example-network
 
   backend-api1:
-    image: ${DOCKER_REG}microservice-example-1/backend-api1${DOCKER_TAG}
+    image: microservice-example-1/backend-api1
     build: 
       context: .
       dockerfile: backend-api1/Dockerfile
@@ -34,7 +34,7 @@ services:
       - microservice-example-network
 
   backend-api2:
-    image: ${DOCKER_REG}microservice-example-1/backend-api2${DOCKER_TAG}
+    image: microservice-example-1/backend-api2
     build: 
       context: .
       dockerfile: backend-api2/Dockerfile

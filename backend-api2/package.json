@@ -2,12 +2,9 @@
   "name": "backend-api2",
   "version": "1.0.0",
   "main": "server.js",
-  "engines": {
-    "node": "^8.11.1"
-  },
   "description": "",
   "scripts": {
-    "start": "node server.js"
+    "start": "node  -r ./tracing.js server.js"
   },
   "license": "MIT",
   "repository": "https://github.com/spylkkanen/kubernetes-microservices",

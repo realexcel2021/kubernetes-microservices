@@ -9,7 +9,7 @@ metadata:
   labels:
     app: backend-api-2
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: backend-api-2
@@ -21,8 +21,8 @@ spec:
       containers:
       - name: backend-api-2-pods
 
-        image: localhost:5000/microservice-example-1/backend-api2:latest
-        imagePullPolicy: Always
+        image: drayfocus/microservice-example-1-backend-api2:v8
+        imagePullPolicy: Never
 
         ports:
         - containerPort: 3020
@@ -37,8 +37,3 @@ spec:
             port: 3020
           initialDelaySeconds: 3
           periodSeconds: 20
-
-        resources:
-          requests:
-            memory: "256M"
-            cpu: 0.25
