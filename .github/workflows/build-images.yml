@@ -1,4 +1,4 @@
-name: "Pipeline to build both frontend and backend images"
+name: "build frontend "
 
 on:
     workflow_dispatch:
