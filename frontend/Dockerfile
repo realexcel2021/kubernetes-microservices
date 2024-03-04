@@ -11,6 +11,9 @@ COPY ./package*.json ./
 # Install npm packages
 RUN npm install --silent
 
+RUN npm install @opentelemetry/sdk-node @opentelemetry/auto-instrumentations-node @opentelemetry/exporter-trace-otlp-http express @opentelemetry/resources @opentelemetry/semantic-conventions --force
+
+
 # Copy project files to the workdir.
 COPY . .
 
